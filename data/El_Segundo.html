@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_a0ba820cfd4541179468142afefd339b {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css" />
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_a0ba820cfd4541179468142afefd339b" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_a0ba820cfd4541179468142afefd339b = L.map(
+                                  'map_a0ba820cfd4541179468142afefd339b',
+                                  {center: [33.9233982,-118.388712233],
+                                  zoom: 5,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_98478b4be0524e878683c35a8013e1d0 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_a0ba820cfd4541179468142afefd339b);
+        
+    
+            var marker_cluster_ccbf5475a2bb48e0a80e1d365770f3be = L.markerClusterGroup({
+                
+            });
+            map_a0ba820cfd4541179468142afefd339b.addLayer(marker_cluster_ccbf5475a2bb48e0a80e1d365770f3be);
+            
+    
+
+            var marker_bf10255eced342e2be7ab02df4528ef5 = L.marker(
+                [33.919082,-118.390239],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ccbf5475a2bb48e0a80e1d365770f3be);
+            
+    
+
+                var icon_7e040eda536d4ef3acc8fe8208561b6d = L.AwesomeMarkers.icon({
+                    icon: 'ok-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bf10255eced342e2be7ab02df4528ef5.setIcon(icon_7e040eda536d4ef3acc8fe8208561b6d);
+            
+    
+            var popup_93d40a8ccc61400a94e9d8aab2a03ea2 = L.popup({maxWidth: '300'});
+
+            
+                var html_c4e71676fc114227ad31f83992170a74 = $('<div id="html_c4e71676fc114227ad31f83992170a74" style="width: 100.0%; height: 100.0%;">[ Computer Sciences ] ===> 2100 East Grand Avenue</div>')[0];
+                popup_93d40a8ccc61400a94e9d8aab2a03ea2.setContent(html_c4e71676fc114227ad31f83992170a74);
+            
+
+            marker_bf10255eced342e2be7ab02df4528ef5.bindPopup(popup_93d40a8ccc61400a94e9d8aab2a03ea2);
+
+            
+        
+    
+
+            var marker_3c242d23b9b74d82b2e15b5a72894a02 = L.marker(
+                [33.930508,-118.384282],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ccbf5475a2bb48e0a80e1d365770f3be);
+            
+    
+
+                var icon_fa232641ada14b16ba3b66f49e63960b = L.AwesomeMarkers.icon({
+                    icon: 'remove-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3c242d23b9b74d82b2e15b5a72894a02.setIcon(icon_fa232641ada14b16ba3b66f49e63960b);
+            
+    
+            var popup_ec48452d55f24929b69e516f07079791 = L.popup({maxWidth: '300'});
+
+            
+                var html_5e6556ae61b04604953c66dc64a9a573 = $('<div id="html_5e6556ae61b04604953c66dc64a9a573" style="width: 100.0%; height: 100.0%;">[ Directv Group ] ===> 2230 East Imperial Highway</div>')[0];
+                popup_ec48452d55f24929b69e516f07079791.setContent(html_5e6556ae61b04604953c66dc64a9a573);
+            
+
+            marker_3c242d23b9b74d82b2e15b5a72894a02.bindPopup(popup_ec48452d55f24929b69e516f07079791);
+
+            
+        
+    
+
+            var marker_0023f1497d704461ac269165fe43fa05 = L.marker(
+                [33.920604,-118.391615],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_ccbf5475a2bb48e0a80e1d365770f3be);
+            
+    
+            var popup_9e7dc8a3d91b4d639bfefd37b19558f4 = L.popup({maxWidth: '300'});
+
+            
+                var html_77acd6eca09c44a58a3f5f6e438b0759 = $('<div id="html_77acd6eca09c44a58a3f5f6e438b0759" style="width: 100.0%; height: 100.0%;">[ Mattel Incorporated ] ===> 333 Continental Boulevard</div>')[0];
+                popup_9e7dc8a3d91b4d639bfefd37b19558f4.setContent(html_77acd6eca09c44a58a3f5f6e438b0759);
+            
+
+            marker_0023f1497d704461ac269165fe43fa05.bindPopup(popup_9e7dc8a3d91b4d639bfefd37b19558f4);
+
+            
+        
+</script>

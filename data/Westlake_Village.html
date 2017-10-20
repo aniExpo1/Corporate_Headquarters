@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_da53eec2f5b34682ac3429f07f7b3990 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css" />
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_da53eec2f5b34682ac3429f07f7b3990" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_da53eec2f5b34682ac3429f07f7b3990 = L.map(
+                                  'map_da53eec2f5b34682ac3429f07f7b3990',
+                                  {center: [34.0762388133,-118.4191451],
+                                  zoom: 5,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_8dc3f3059c22479a8a4dbffdcab649d6 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_da53eec2f5b34682ac3429f07f7b3990);
+        
+    
+            var marker_cluster_87942c48ebea44a2a21d6a5fc6b8181c = L.markerClusterGroup({
+                
+            });
+            map_da53eec2f5b34682ac3429f07f7b3990.addLayer(marker_cluster_87942c48ebea44a2a21d6a5fc6b8181c);
+            
+    
+
+            var marker_e41df0ae4507467a8081a621d0b15d12 = L.marker(
+                [34.178684,-118.601013],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_87942c48ebea44a2a21d6a5fc6b8181c);
+            
+    
+
+                var icon_8114d06e827c45b48a43eb0e886d84d6 = L.AwesomeMarkers.icon({
+                    icon: 'ok-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e41df0ae4507467a8081a621d0b15d12.setIcon(icon_8114d06e827c45b48a43eb0e886d84d6);
+            
+    
+            var popup_1b1fee622ba84a70948f5a99b893713d = L.popup({maxWidth: '300'});
+
+            
+                var html_b3454829f83a409485beb244cc55f669 = $('<div id="html_b3454829f83a409485beb244cc55f669" style="width: 100.0%; height: 100.0%;">[ Health Net Incorporated ] ===> Address: 21650 Oxnard Street, Zip: 91367, Phone: (818) 676-6000 </div>')[0];
+                popup_1b1fee622ba84a70948f5a99b893713d.setContent(html_b3454829f83a409485beb244cc55f669);
+            
+
+            marker_e41df0ae4507467a8081a621d0b15d12.bindPopup(popup_1b1fee622ba84a70948f5a99b893713d);
+
+            
+        
+</script>

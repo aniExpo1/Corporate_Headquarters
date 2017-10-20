@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_f0f356543cb940b9b5d405ec0d748690 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css" />
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f0f356543cb940b9b5d405ec0d748690" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_f0f356543cb940b9b5d405ec0d748690 = L.map(
+                                  'map_f0f356543cb940b9b5d405ec0d748690',
+                                  {center: [34.1508334,-118.6477176],
+                                  zoom: 5,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_76bc0d33a17c47358fea27a6b6410e97 = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_f0f356543cb940b9b5d405ec0d748690);
+        
+    
+            var marker_cluster_f697cfa2fcff4c59a0e5e5fedb1271e8 = L.markerClusterGroup({
+                
+            });
+            map_f0f356543cb940b9b5d405ec0d748690.addLayer(marker_cluster_f697cfa2fcff4c59a0e5e5fedb1271e8);
+            
+    
+
+            var marker_74c084beef8c4d559e9d8a1e5a2ea428 = L.marker(
+                [34.152235,-118.649559],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_f697cfa2fcff4c59a0e5e5fedb1271e8);
+            
+    
+
+                var icon_a3a7e78c37284afa99e3f6ed927255e8 = L.AwesomeMarkers.icon({
+                    icon: 'ok-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_74c084beef8c4d559e9d8a1e5a2ea428.setIcon(icon_a3a7e78c37284afa99e3f6ed927255e8);
+            
+    
+            var popup_d1430652f0934024a3b1499c583119aa = L.popup({maxWidth: '300'});
+
+            
+                var html_c67f6799ee8b45f5b3c7f13d35f5520a = $('<div id="html_c67f6799ee8b45f5b3c7f13d35f5520a" style="width: 100.0%; height: 100.0%;">[ Ryland Group ] ===> Address: 24025 Park Sorrento, Zip: 91302, Phone: (818) 223-7500 </div>')[0];
+                popup_d1430652f0934024a3b1499c583119aa.setContent(html_c67f6799ee8b45f5b3c7f13d35f5520a);
+            
+
+            marker_74c084beef8c4d559e9d8a1e5a2ea428.bindPopup(popup_d1430652f0934024a3b1499c583119aa);
+
+            
+        
+    
+
+            var marker_7bdcd58aa5a74362b32f44a27635189b = L.marker(
+                [34.149432,-118.645876],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(marker_cluster_f697cfa2fcff4c59a0e5e5fedb1271e8);
+            
+    
+
+                var icon_59832e02628745118d0611922c5c26e0 = L.AwesomeMarkers.icon({
+                    icon: 'remove-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7bdcd58aa5a74362b32f44a27635189b.setIcon(icon_59832e02628745118d0611922c5c26e0);
+            
+    
+            var popup_c42a278afcc74caa9f1d74f4aec3255a = L.popup({maxWidth: '300'});
+
+            
+                var html_ca6629207f544d63a3b385ca685414e7 = $('<div id="html_ca6629207f544d63a3b385ca685414e7" style="width: 100.0%; height: 100.0%;">[ Countrywide Financial ] ===> Address: 4500 Park Granada, Zip: 91302, Phone: (818) 225-3000</div>')[0];
+                popup_c42a278afcc74caa9f1d74f4aec3255a.setContent(html_ca6629207f544d63a3b385ca685414e7);
+            
+
+            marker_7bdcd58aa5a74362b32f44a27635189b.bindPopup(popup_c42a278afcc74caa9f1d74f4aec3255a);
+
+            
+        
+</script>
